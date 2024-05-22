@@ -14,7 +14,9 @@ match num:
         for element in contend:
             element_path = os.path.join(dir1, element)
             if os.path.isfile(element_path):
-                print("Arquivo: \n", element)
+                print("Arquivo:", element)
+                print("Local:", element_path)
+                print("\n")
             elif os.path.isdir(element_path):
                 print("Diretorio: ", element)
 
